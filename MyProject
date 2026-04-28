@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практична робота</title>
 
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .one{
+            width: 150px;
+            height: 150px;
+            background-color: crimson;
+            margin: 20px auto;
+            transition: 2s;
+        }
+
+        .two{
+            width: 150px;
+            height: 150px;
+            background-color: royalblue;
+            margin: 20px auto;
+            transition: 2s;
+        }
+
+        
+        .one:hover{
+            background-color: orange;
+            transform: rotate(45deg) scale(1.2);
+        }
+
+        .two:hover{
+          background-color: purple;
+          transform: rotate(-45deg) scale(1.5);
+        }
+        
+        
+        .inline-img{
+            width: 300px;
+            transition: 1s;
+        }
+
+        
+        .inline-img:hover{
+            transform: scale(1.5);
+        }
+
+        
+        .square{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin: 50px auto;
+            margin-top: 100px;
+            
+
+            animation-name: spin;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        
+        @keyframes spin{
+            from{
+                transform: rotate(0deg);
+            }
+
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Анімаційні ефекти</h1>
+
+    
+    <div class="one"></div>
+    <div class="two"></div>
+
+    
+    <img src="https://pusheen.com/wp-content/uploads/2020/12/What-Sweet-Quiz-SocialResults_Donut-1-e1608220861325.jpg" class="inline-img">
+
+    
+    <header>
+        <div class="square"></div>
+    </header>
+
+</body>
+</html>
